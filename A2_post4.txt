@@ -1,0 +1,17 @@
+//Array-2 > post4
+public int[] post4(int[] nums) {
+  int index = 0;
+  int arrSize = 0;
+  for(int i = nums.length-1; i >= 0; i--){
+    if(nums[i] == 4){
+      index = i + 1;
+      break;
+    }
+  }
+  arrSize = nums.length - index;
+  int[] arr = new int[arrSize];
+  for(int i = 0; i < arrSize; i++){
+    arr[i] = nums[index + i];
+  }
+  return arr;
+}

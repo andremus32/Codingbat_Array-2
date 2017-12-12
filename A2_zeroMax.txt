@@ -1,0 +1,24 @@
+//Array-2 > zeroMax
+public int[] zeroMax(int[] nums) {
+  for(int i = 0; i < nums.length; i++){
+    if(nums[i] == 0){
+      nums[i] = findMaxOdd(nums, i);
+    }
+  }
+  return nums;
+}
+
+public int findMaxOdd(int[] nums, int x){
+  int maxOdd = 0;
+  for(int i = x; i < nums.length; i++){
+    if(isOdd(nums[i]) && nums[i] > maxOdd){
+      maxOdd = nums[i];
+    }
+  }
+  return maxOdd;
+}
+
+public boolean isOdd(int x){
+  if((x % 2) == 1) return true;
+  else return false;
+}

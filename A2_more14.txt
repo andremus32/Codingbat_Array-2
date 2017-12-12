@@ -1,0 +1,14 @@
+//Array-2 > more14
+public boolean more14(int[] nums) {
+  int countOne = 0;
+  int countFour = 0;
+  for(int x : nums){
+    if(x == 1){
+      countOne++;
+    }
+    else if(x == 4){
+      countFour++;
+    }
+  }
+  return (countOne > countFour);
+}

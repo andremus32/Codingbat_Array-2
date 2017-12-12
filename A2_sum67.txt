@@ -1,0 +1,18 @@
+//Array-2 > sum67
+public int sum67(int[] nums) {
+  int sum = 0;
+  Boolean isIgnoreZone = false;
+  for(int x : nums){
+    if(x == 6){
+      isIgnoreZone = true;
+    }
+    if(!isIgnoreZone){
+      sum += x;
+    }
+    if(x == 7){
+      isIgnoreZone = false;
+      
+    }
+  }
+  return sum;
+}

@@ -1,0 +1,10 @@
+//Array-2 > sum28
+public boolean sum28(int[] nums) {
+  int sumTwo = 0;
+  for(int x : nums){
+    if(x == 2){
+      sumTwo += 2;
+    }
+  }
+  return (sumTwo == 8);
+}

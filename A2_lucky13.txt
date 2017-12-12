@@ -1,0 +1,11 @@
+//Array-2 > lucky13
+public boolean lucky13(int[] nums) {
+  boolean check = true;
+  for(int x : nums){
+    if(x == 1 || x == 3){
+      check = false;
+      break;
+    }
+  }
+  return check;
+}

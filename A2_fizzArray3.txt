@@ -1,0 +1,9 @@
+//Array-2 > fizzArray3
+public int[] fizzArray3(int start, int end) {
+  int arrSize = Math.abs(end - start);
+  int[] arr = new int[arrSize];
+  for(int i = 0; i < arrSize; i++){
+    arr[i] = i+start;
+  }
+  return arr;
+}

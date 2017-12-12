@@ -1,0 +1,28 @@
+//Array-2 > modThree
+public boolean modThree(int[] nums) {
+  int countEven = 0;
+  int countOdd = 0;
+  boolean isEven = false;
+  boolean check = false;
+  
+  for(int x : nums){
+    isEven = (x % 2 == 0);
+    if(isEven){
+      countOdd = 0;
+      countEven++;
+      if(countEven == 3){
+        check = true;
+        break;
+      }
+    }
+    else{
+      countEven = 0;
+      countOdd++;
+      if(countOdd == 3){
+        check = true;
+        break;
+      }
+    }
+  }
+  return check;
+}
